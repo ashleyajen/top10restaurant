@@ -1,0 +1,115 @@
+h1{
+
+text-align: center;
+padding-bottom: 20px;
+font-family: 'Lobster', cursive;
+font-weight: normal;
+font-size: 100px;
+
+}
+
+h1, h2 {
+  color: #2d4f68;
+  width: 100%;
+  font-family: 'Lobster', cursive;
+  font-weight: normal;
+  border-color: #2d4f68;
+  border-style: double;
+  border
+}
+
+h2 {
+  width: 300px;
+  margin:auto;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+body{
+
+  background-color: #96c8d0;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.img{
+
+  height: 200px;
+  width: 300px;
+}
+
+.flex_container{
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  flex: 1;
+
+}
+
+.first2, .second2, .third2{
+  /*display: flex;*/
+  flex: 1;
+  /*flex-wrap: wrap;*/
+}
+
+p {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: 'Josefin Slab', serif;
+
+}
+
+footer{
+  text-align: center;
+  margin-top: 100px;
+  font-family: 'Lobster', cursive;
+  color: #2d4f68;
+}
+
+.fa-yelp {
+  color: #c41200;
+}
+
+.fa-instagram {
+  color: #666666;
+}
+
+.fa-facebook {
+  background-color: white;
+  color: #3b5998;
+}
+
+.icons .fa {
+  height: 50px;
+  width: 50px;
+  background-color: rgba(150,200,208, 0.5);
+  border-radius: 100%;
+  text-align: center;
+  line-height: 50px;
+}
+
+.icons .fa:hover {
+  box-shadow: 1px 1px 3px #333;
+}
+
+@keyframes hover_bob {
+  0% {transform: translateY(-8px);}
+  50% {transform: translateY(-4px);}
+  100% {transform: translateY(-8px);}
+}
+
+@keyframes hover_bob_float {
+  100% {transform: translateY(-6px);}
+}
+
+.hover_bob { display: inline-block;}
+
+.hover_bob:hover {
+  animation-name: hover_bob_float, hover_bob;
+  animation-duration: 0.3s, 1.5s;
+  animation-delay: 0s, .3s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal, alternate;
+}
